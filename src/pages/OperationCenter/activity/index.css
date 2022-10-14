@@ -1,0 +1,6 @@
+.ant-input[disabled], .ant-input-number-input, #timed_release, .ant-picker-input>input {
+  color: #000 !important;
+}
+.colorTap {
+  color: #ff4d4f;
+}

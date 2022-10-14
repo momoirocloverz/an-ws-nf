@@ -1,0 +1,16 @@
+export interface TableListItem {
+  id: number,
+  min: nnumber,
+  max: number,
+  show: number,
+  user_name: string,
+  family_name: string,
+  group_name: string,
+  area: string,
+  created_at: string,
+  product_name: string,
+  image_url: Array,
+  integral: number,
+  quantity: number,
+  receive_status: number,
+}

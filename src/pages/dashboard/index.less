@@ -1,0 +1,413 @@
+.selectVillage {
+  // float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.titleHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  li {
+    margin-right: 24px;
+    flex: 1;
+  }
+
+  li:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+.cardItem {
+  width: 100%;
+  // height: 175px;
+  min-height: 115px;
+  padding: 6px;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+  background-color: transparent;
+  overflow: hidden;
+  h1 {
+    font-size: 36px;
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 36px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.cardItem:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  color: #fff;
+  margin-bottom: 10px;
+  span:nth-child(1) {
+    font-size: 18px;
+  }
+  span:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+.topIcon {
+  color: #1afa29;
+  margin-left: 5px;
+  font-weight: bolder;
+  position: relative;
+  top: -2px;
+}
+
+.bottomIcon {
+  color: #d81e06;
+  margin-left: 8px;
+  font-weight: bolder;
+  position: relative;
+  top: -2px;
+}
+
+.echartsBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  &>div {
+    background: #fff;
+  }
+}
+
+.echartsItem {
+  width: 49%;
+  height: 300px;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.timePicker{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  column-gap: 2ch;
+  .yearPicker {
+    width: 100px;
+  }
+  .monthPicker {
+    width: 90px;
+  }
+}
+.table {
+  overflow: hidden;
+  background: #fff;
+
+  .year {
+    margin: 20px 0 20px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+  }
+}
+
+.threeStatic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  border-radius: 2px;
+  .staticTop {
+    height: 59px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #e9ecf1;
+    img {
+      height: 26px;
+      margin-left: 20px;
+    }
+    .staticLabel {
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 20px;
+    }
+    .staticLabel {
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 29px;
+    }
+
+    .staticExport {
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .staticTable {
+      margin-right: 20px;
+    }
+  }
+
+  .staticSelect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    .selectLeft {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .selectItem {
+        margin-right: 15px;
+
+        .selectLabel {
+          color: #000;
+          font-size: 14px;
+        }
+
+        .selectInfo {
+          width: 180px;
+        }
+
+        .selectInfo1 {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  .piePicture {
+    margin: 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .pieItem {
+      width: 32%;
+      height: 280px;
+      position: relative;
+      margin-left: 2%;
+      box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+      background: #fff;
+      .totalPoint {
+        position: absolute;
+        right: 15px;
+        top: 6px;
+      }
+    }
+    .pieItem:nth-of-type(1) {
+      margin-left: 0;
+    }
+    .pieItem50 {
+      width: 49%;
+    }
+    .pieItem100 {
+      width: 100%;
+      margin-left: 0px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .pieStreetPic {
+    // display: flex;
+    // flex-direction: column;
+    .pieTitles {
+      margin: 20px 0px 0px 30px;
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  .rankingTable {
+    width: 100%;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.1);
+    background: #fff;
+  }
+  .tableTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-weight: 500;
+    padding: 0 20px;
+    margin: 10px 0;
+  }
+
+  .scoreTen {
+    margin: 10px;
+  }
+
+  .pagination {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .barVillage {
+    width: 50%;
+    height: 300px;
+    position: relative;
+  }
+
+  .barVillageTopTwo {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .sortTen {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+
+    .sortTenLeft {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .selectInfoType {
+    width: 180px;
+  }
+
+  .sortTable {
+    padding-bottom: 20px;
+    margin: 0px 10px;
+  }
+
+  .barVillageLeft {
+    margin-left: 20px;
+  }
+
+  .barVillage90 {
+    width: 90%;
+  }
+
+  .pieLook {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 14px;
+  }
+}
+
+.all {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalTable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .modalSearch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .searchLeft {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      li {
+        margin-right: 10px;
+      }
+
+      .searchItem {
+        width: 150px;
+      }
+    }
+
+    .SearchBtn {
+      margin-right: 10px;
+    }
+  }
+
+  .modalExport {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: #eee solid 1px;
+    margin-bottom: 0px;
+
+    .exportBtn {
+      margin-top: 10px;
+    }
+  }
+
+  .tableInfo {
+    margin-top: 10px;
+  }
+
+  .tablePagination {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+:global {
+  .ant-card-body {
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .ant-divider-horizontal.ant-divider-with-text {
+    margin: 0;
+  }
+  .ant-divider-horizontal.ant-divider-with-text::before, .ant-divider-horizontal.ant-divider-with-text::after {
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
+.moduleTitle {
+  font-size: 14px;
+  color: #3c3c3c;
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  font-weight: bold;
+}
+.exportButton {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px auto;
+}

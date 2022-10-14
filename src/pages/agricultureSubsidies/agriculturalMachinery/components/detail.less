@@ -1,0 +1,32 @@
+.customTable{
+  .actionCell{
+    display: flex;
+    flex-flow: column;
+  }
+  .headerRow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 24px;
+    column-gap: 8px;
+    width: 100%;
+    background-color: white;
+    .stats {
+      margin-right: auto;
+      white-space: pre;
+    }
+  }
+
+  :global{
+    .ant-pro-table-search {
+      border: 1px solid lightgray;
+      border-top: none;
+    }
+    .ant-table-wrapper {
+      overflow-x: scroll;
+    }
+    .ant-table-row-level-1 {
+      background-color: antiquewhite;
+    }
+  }
+}

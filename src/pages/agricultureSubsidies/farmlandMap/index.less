@@ -1,0 +1,107 @@
+@field-label-color: rgba(0, 0, 0, 0.85);
+
+.pageContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: white;
+  padding-block-end: 300px;
+  .searchBar {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 20px 10px;
+    border-bottom: 1px solid gainsboro;
+    .filters {
+      display: flex;
+      flex-flow: row wrap;
+      //display: grid;
+      //grid-template-columns: 2fr 1fr 1fr 3fr;
+      //justify-content: space-between;
+      .filterParam {
+        line-height: 5ch;
+        margin-inline-end: 20px;
+        .filterLabel {
+          margin-inline-end: 1ch;
+          color: @field-label-color;
+          font-size: 14px;
+        }
+        .seasonSelector {
+           min-width: 8ch;
+         }
+        .categorySelector {
+          min-width: 30ch;
+        }
+        .ownershipTypeSelector {
+          min-width: 16ch;
+        }
+      }
+    }
+    .searchActions {
+      display: flex;
+      margin-inline-start: auto;
+      column-gap: 2ch;
+    }
+  }
+  .mapContainer {
+    z-index: 100;
+    width: 100%;
+    height: 500px;
+    background-color: #2f2f2f;
+    .farmTooltip {
+      color: white;
+      font-family: 'Microsoft Yahei', serif;
+      white-space: pre;
+      text-align: left;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-color: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+    }
+    .leaflet-tile-container{
+      img {
+        width: 256.5px !important;
+        height: 256.5px !important;
+      }
+    }
+    //min-height: 400px;
+  }
+  .legendContainer {
+    position: absolute;
+    z-index: 101;
+    display: flex;
+    flex-flow: column;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    margin: 10px;
+    padding: 10px;
+    background: #333a;
+    border-radius: 10px;
+    row-gap: 3px;
+    backdrop-filter: blur(5px);
+    .legend {
+      display: flex;
+      color: white;
+      column-gap: 1ch;
+      font-size: larger;
+    }
+  }
+  .landOverview{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-block-start: 1em;
+    .landDetails {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      .field{
+        .fieldLabel{
+          margin-inline-end: 1ch;
+          color: @field-label-color;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  :global {
+    .ant-cascader-picker {
+      min-width: 220px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+export interface TableListItem {
+  user_id: number | string;
+  mobile: string;
+  avatar: string;
+  farmer_name: string;
+  family_id: number | string;
+  birthday: string;
+  sex: number | string;
+  client_os: string;
+  status: number | string;
+  register_ip: string;
+  register_app: number | string;
+  real_name: string;
+  total_score: number | string;
+  identity: string;
+  inspect: number;
+  city_id: number | string;
+  town_id: number | string;
+  village_id: number | string;
+  last_login_time: string;
+  last_login_ip: string;
+  created_at: string;
+  updated_at: string;
+  family: string;
+  family_group: string;
+  question_num: number | string;
+  answer_num: number | string;
+  market_num: number | string;
+  exchange_score: number | string;
+  city_town: string;
+}

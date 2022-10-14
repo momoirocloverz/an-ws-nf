@@ -1,0 +1,15 @@
+export interface TableListItem {
+  market_id: number,
+  user_name: string,
+  type: string,
+  market_category_name: string,
+  title: string,
+  content: string,
+  image_url_rows: Array,
+  price: number,
+  address: string,
+  mobile: string,
+  shares: number,
+  created_at: string,
+  unit: string,
+}

@@ -1,0 +1,41 @@
+.container {
+  height: 50px;
+  display: flex;
+  flex-flow: column;
+  .row {
+    display: flex;
+    height: 100%;
+    .input {
+      flex: 1;
+      width: auto;
+      margin-right: 20px;
+      background-color: white;
+      color: black;
+      &:hover {
+        background: white !important;
+      }
+    }
+    .image {
+      height: 100%;
+      background-color: white;
+    }
+    .button {
+      min-width: 80px;
+      border: none;
+      background: white;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .icon {
+        color: black;
+        margin-right: 5px;
+      }
+      &:hover {
+        color: dodgerblue;
+        .icon {
+          color: dodgerblue;
+        }
+      }
+    }
+  }
+}

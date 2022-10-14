@@ -1,0 +1,96 @@
+.colorTap {
+  color: #ff4d4f;
+}
+.subTable{
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 600px;
+  height: 100px;
+  background: rgba(0,0,0,0.8);
+  z-index: 999;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+  div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    span{
+      color: #fff;
+      display: block;
+      width: 25%;
+      text-align: center;
+    }
+  }
+}
+.headerRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 24px;
+  column-gap: 8px;
+  width: 100%;
+  background-color: white;
+  .stats {
+    margin-right: auto;
+    white-space: pre;
+    span{
+      margin-right: 20px;
+    }
+  }
+}
+:global(.ant-pro-table-extra) {
+  margin-bottom: 0;
+}
+
+.hoverBox{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.tabs {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.margin {
+  margin-right: 10px;
+}
+.imgBox {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+.pay_cert_ids{
+  width: 120px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .pay_cert_ids_link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    &:nth-child(3n+3){
+      margin-right: 0;
+    }
+  }
+  .pay_cert_ids_img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+  }
+}

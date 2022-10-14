@@ -1,0 +1,21 @@
+.detailsModalWrapper{
+  .imageContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10px;
+    row-gap: 1em;
+    column-gap: 1em;
+    .documentImage{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  :global {
+    .ant-input-disabled {
+      color: black;
+      background: none;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}

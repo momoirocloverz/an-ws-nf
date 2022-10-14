@@ -1,0 +1,35 @@
+.tabs {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.colorTap {
+  color: #ff4d4f;
+}
+.listItem {
+  div {
+    line-height: 40px;
+    color: #666;
+    overflow: hidden;
+    span:nth-of-type(1) {
+      width: 160px;
+      text-align: right;
+      color: #333;
+      float: left;
+    }
+  }
+}
+
+.relatedPartyMaint {
+  float: left;
+  width: 70%;
+  :global {
+    .ant-table-thead > tr > th {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .ant-table-tbody > tr > td {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}

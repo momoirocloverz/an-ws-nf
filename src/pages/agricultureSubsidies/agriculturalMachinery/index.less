@@ -1,0 +1,38 @@
+.pageContent{
+  display: flex;
+  flex-flow: column nowrap;
+  .headerBar{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    row-gap: 2ch;
+    height: 50px;
+    :global {
+      .ant-menu {
+        background: transparent;
+      }
+      .ant-menu-item {
+        margin: 0;
+        padding: 0 20px;
+        background: white;
+        border: 1px solid lightgray;
+        border-radius: 10px 10px 0 0;
+        ::after {
+          border-bottom: none;
+        }
+        &:hover {
+          &::after {
+            border-bottom: none;
+          }
+        }
+      }
+      .ant-menu-item-selected {
+        border-bottom: none;
+        &::after {
+          border-bottom: none;
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,45 @@
+.modalWrapper {
+  .content {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    :global {
+      .ant-cascader-picker-disabled, .ant-input-disabled,
+      .ant-select-disabled.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        color: #000b;
+      }
+    }
+    .userInfoBox {
+      width: 600px;
+    }
+    .verificationBox {
+      display:flex;
+      flex-flow:column nowrap;
+      align-items: center;
+      justify-content:center;
+    }
+    .formBox {
+      width: 800px;
+      :global{
+        .ant-input-group-addon {
+          background: none;
+          border: none;
+        }
+        .ant-list {
+          max-height: 500px;
+          overflow-y: scroll;
+        }
+      }
+    }
+    .resultBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 22px;
+      padding: 20px;
+      height: 200px;
+      white-space: pre;
+    }
+  }
+}

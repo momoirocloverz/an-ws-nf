@@ -1,0 +1,38 @@
+.settingAuth{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.settingArea{
+    display: flex;
+    flex-direction: row;
+    .defaultVillage {
+        border-left: 1px solid #ddd;
+    }
+    :global{
+        .ant-tree .ant-tree-node-content-wrapper .ant-tree-iconEle{
+            float: right;
+            display: inline-block;
+            padding-left: 5px;
+            width: auto;
+            color: #108ee9;
+        }
+        .ant-tree .ant-tree-node-content-wrapper {
+            position: relative;
+        }
+        .ant-tree .ant-tree-node-content-wrapper:hover::after{
+            content: "默认";
+            position: absolute;
+            top: 0px;
+            color: #108ee9;
+            bottom: 0;
+            right: -34px;
+            height: 2px;
+            width: 30px;
+            // background-color: #ffffff;
+        }
+    }
+}
+.settingArea>div{
+    width: 50%;
+    padding: 10px;
+}
